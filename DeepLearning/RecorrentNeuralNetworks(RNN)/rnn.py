@@ -128,6 +128,7 @@ hidden_size = 32
 #Classe que permite gerar pilhas de camadas linear (uma rede)
 sl_model = Sequential()
 #o método add adiciona uma nova camada e a classe Embedding é utilizado para criar camadas de entrada em que recebe o numero de entradas e saidas dessa primeira camada
+#Somente utilizado para estruturas do tipo vocabulario
 sl_model.add(Embedding(max_words, hidden_size))
 #LSTM gera uma camada do tipo LSTM que recebe o numero de saidas, o tipo de funcao de ativacao geralmente a tangente hiperbolica
 # o quanto irei desconsiderar dos dados de entrada nessa camada e quanto irei desconsideradar do estado de recorrencia anterior
